@@ -502,7 +502,7 @@ fn tunnel_eof() -> io::Error {
 }
 
 #[cfg(feature = "default-tls")]
-mod native_tls_async {
+pub mod native_tls_async {
     use std::io::{self, Read, Write};
 
     use futures::{Poll, Future, Async};

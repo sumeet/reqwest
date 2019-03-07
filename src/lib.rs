@@ -1,5 +1,5 @@
-#![deny(missing_docs)]
-#![deny(missing_debug_implementations)]
+//#![deny(missing_docs)]
+//#![deny(missing_debug_implementations)]
 #![cfg_attr(test, deny(warnings))]
 #![doc(html_root_url = "https://docs.rs/reqwest/0.9.22")]
 
@@ -249,7 +249,7 @@ pub use self::tls::{Certificate, Identity};
 mod error;
 
 mod async_impl;
-mod connect;
+pub mod connect;
 mod body;
 mod client;
 pub mod cookie;
